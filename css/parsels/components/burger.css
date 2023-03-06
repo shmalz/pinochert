@@ -1,0 +1,46 @@
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items:center;
+    justify-content: flex-end;
+    width: 20px;
+    height: 15px;
+    margin: 15px;
+}
+.burger span{
+    width: 25px; 
+    height: 2px;
+    transform: scale(1);
+    background-color:rgb(29, 29, 29);
+    justify-content: flex-end;
+}
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    background-color:rgb(1, 1, 1);
+    transition: all 0.3s ease 0s;
+}
+.burger::after {
+    bottom :0;  
+}
+.burger::before {
+    top: 0;
+}
+.burger.active span {
+    transform: scale(0);
+}
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%)
+}
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%)
+}
+@keyframes burgerAnimation{
+    from {opacity:0}
+    to{ opacity: 1;}
+}
