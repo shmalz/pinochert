@@ -1,6 +1,9 @@
+/* всегда первые */
 @import url("./parsels/reset.css");
 @import url("./parsels/my-reset.css");
+/* блоки */
 @import url("./parsels/page.css");
 @import url("./parsels/header.css");
-@import url("./parsels/medias.css");
 @import url("./parsels/firstblock.css");
+/* всегда последнее */
+@import url("./parsels/medias.css");

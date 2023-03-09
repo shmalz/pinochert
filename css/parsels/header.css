@@ -7,6 +7,8 @@
     min-height: 80px;
     margin: 0 10px;
     color:rgb(12, 12, 12); 
+    background-image: url('../../img/obl.png');
+    
 }
 .page-nav{
     display: flex;
